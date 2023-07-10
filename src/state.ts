@@ -24,6 +24,7 @@ export let activations: {[key: string]: nn.ActivationFunction} = {
   "relu": nn.Activations.RELU,
   "tanh": nn.Activations.TANH,
   "sigmoid": nn.Activations.SIGMOID,
+  "swish": nn.Activations.SWISH,
   "linear": nn.Activations.LINEAR
 };
 

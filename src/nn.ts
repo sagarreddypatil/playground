@@ -134,6 +134,10 @@ export class Activations {
     output: x => x,
     der: x => 1
   };
+  public static SWISH: ActivationFunction = {
+    output: x => x * Activations.SIGMOID.output(x),
+    der: x => x * Activations.SIGMOID.der(x) + Activations.SIGMOID.output(x)
+  };
 }
 
 /** Build-in regularization functions */
